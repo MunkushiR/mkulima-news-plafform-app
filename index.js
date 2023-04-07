@@ -80,6 +80,38 @@ function getLatest() {
 
  })
 } 
+// display local news
+function getLocal() {
+    fetch(localUrl)
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data);
+
+            let news = ''
+            data.slice(0, 3).forEach(local => {
+                
+                news += `
+                <div class="md:flex justify-bewtween">
+                    <div class="bg-green-300 hover:bg-green-400 rounded-md shadow-lg hover:shadow-xl hover:scale-105 hover:translate-x-2 hover:transform duration-500">
+                        <div class="">
+                            <img class="rounded-t-lg" id="img-url" src="${local.image_url}" alt="">
+                        </div>
+                        <div class="pt-2 pb-4 px-6 my-8">
+                            <h3 class="text-xl font-semibold text-gray-800">${local.title}</h3>
+                            <p>${local.description}</p>
+                            <h3 class="py-2 font-semibold text-green-800" href="${local.source_url}">By ${local.source_name}</h3>
+                        </div>
+                    </div>
+                </div>
+                `
+            });
+
+            document.getElementById("local-news").innerHTML = news;
+
+        })
+
+}
+
 
     
 }
