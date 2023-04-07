@@ -181,6 +181,63 @@ form.addEventListener('submit', (e) => {
 
     form.reset();
 
+})
+
+function postOpinion() {
+    const postTitle = document.getElementById("post-title").value;
+    const postContent = document.getElementById("post-content").value;
+    const author = document.getElementById("author").value;
+    const image = document.getElementById("image").value;
+
+    fetch(postsUrl, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json; charset=UTF-8"
+        },
+        body: JSON.stringify({
+            title: postTitle,
+            name: author,
+            image: image,
+            body: postContent
+        }),
+    })
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data)
+            if (postTitle !== "" && author !== "" && image !== "" && postContent !== "") {
+                
+                let showOpinion = document.getElementById("public-opinion")
+                showOpinion.innerHTML += `
+                    <div class="my-4 p-4 rounded-md border-2 border-gray-600">
+                        <img src="${image}" alt="Public Opinion Image Here">
+                        <h2 class="text-xl text-gray-800 font-semibold">${postTitle}, 
+                            <span class="my-2 text-base font-medium text-green-600">${author}</span>
+                        </h2>
+                    
+                        <p class="text-base text-gray-800">${postContent}</p>
+                    </div>
+                `
+            } else {
+                console.log("Please fill in the form!")
+            }
+
+        }) 
+
+}
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    getLatest();
+
+    getRegional();
+
+    getInternational();
+
+    getLocal();
+
+
+})
 
 
 
