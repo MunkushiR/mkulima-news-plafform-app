@@ -171,7 +171,17 @@ function getInternational() {
 
         })
 
-}
+}// post news
+const form = document.getElementById("form")
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+
+    postOpinion();
+
+    form.reset();
+
+
 
 
 
