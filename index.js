@@ -142,6 +142,38 @@ function getRegional() {
 
 }
 
+// display international
+function getInternational() {
+    fetch(intUrl)
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data)
+
+            let inter = ''
+            data.slice(0, 3).forEach(international => {
+                
+                inter += `
+                    <div class="md:flex justify-bewtween">
+                        <div class="bg-green-300 hover:bg-green-400 rounded-md md:p-8 shadow-lg flex flex-col hover:shadow-xl hover:scale-105 hover:translate-x-2 hover:transform duration-500">
+                            <div class="">
+                                <img class="rounded-t-lg" id="img-url" src="${international.urlToImage}" alt="">
+                            </div>
+                            <div class="pt-2 pb-4 px-6 my-8">
+                                <h3 class="text-xl font-semibold text-gray-800">${international.title}</h3>
+                                <p>${international.description}</p>
+                                <h3 class="py-2 font-semibold text-green-800" href="${international.source_url}">By ${international.author}</h3>
+                            </div>
+                        </div>
+                    </div>
+                `
+            });
+            document.getElementById("international-news").innerHTML = inter;
+
+        })
+
+}
+
+
 
 
 
