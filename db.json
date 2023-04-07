@@ -109,4 +109,88 @@
         "urlToImage": "https://onecms-res.cloudinary.com/image/upload/s--ZRCBMAk---/fl_relative,g_south_east,l_one-cms:core:watermark:reuters,w_0.1/f_auto,q_auto/c_fill,g_auto,h_676,w_1200/v1/one-cms/core/2022-08-31t035617z_1_lynxmpei7u037_rtroptp_3_tesla-results.jpg?itok=-bdEEr_I",
         "publishedAt": "2022-08-31T03:56:17Z",
         "content": "SHANGHAI : Tesla Inc has shortened delivery waiting times for its rear-wheel drive Model Ys in China to one to four weeks, it said on its Chinese website, the second change in less than a month.\r\nThe… [+340 chars]"
+      },{
+        "name": "Yahoo Entertainment",
+        "author": "Reuters",
+        "title": "Tesla slashes delivery waiting time for some Model Ys in China",
+        "description": "Tesla Inc has shortened delivery waiting times for its rear-wheel drive Model Ys in China to one to four weeks, it said on its Chinese website, the second...",
+        "url": "https://finance.yahoo.com/news/tesla-slashes-delivery-waiting-time-035617447.html",
+        "urlToImage": "https://s.yimg.com/uu/api/res/1.2/nD.2p3k0ijG.JX4HUwe9aw--~B/aD01MzM7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/reuters-finance.com/c6f85aac0bed3fa91d58e67b616ce056",
+        "publishedAt": "2022-08-31T03:56:17Z",
+        "content": "SHANGHAI (Reuters) - Tesla Inc has shortened delivery waiting times for its rear-wheel drive Model Ys in China to one to four weeks, it said on its Chinese website, the second change in less than a m… [+413 chars]"
+      }
+    ],
+  
+    "locals": [
+      {
+        "name": "India Today",
+        "author": null,
+        "title": "Google not approving Donald Trump’s social media app Truth Social on Play Store",
+        "description": "Not getting approved on Play Store after almost a year from its launch is a major setback for Trump's social media app as there are more than 40 per cent of Android users in the US.",
+        "url": "https://www.indiatoday.in/technology/news/story/google-not-approving-donald-trump-s-social-media-app-truth-social-on-play-store-1994608-2022-08-31",
+        "urlToImage": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202208/donald_trump-647x363.png?IrIiNng7A8CpS61Q6dPUEWbYkkEv6G_L",
+        "publishedAt": "2022-08-31T03:43:15Z",
+        "content": "Former US President Donald Trumps social media app is facing a hard time securing a place in the Play Store. Although the app is readily available on the Apple App Store, Google is taking its own swe… [+1938 chars]"
+      },
+      {
+        "name": "CleanTechnica",
+        "author": "Zachary Shahan",
+        "title": "Kia EV6 Wins Winter Vehicle Award",
+        "description": "The hot new Kia EV6 has won an award I wasn’t aware even existed. The New England Motor Press Association awarded the EV6 with the title of “2022 Winter Vehicle Award For Best Electric Vehicle.” My first thought was, “does the EV6 really have any advantages o…",
+        "url": "https://cleantechnica.com/2022/08/30/kia-ev6-wins-winter-vehicle-award/",
+        "urlToImage": "https://cleantechnica.com/files/2022/08/Kia-EV6.jpeg",
+        "publishedAt": "2022-08-31T03:23:14Z",
+        "content": "The hot new Kia EV6 has won an award I wasn’t aware even existed. The New England Motor Press Association awarded the EV6 with the title of 2022 Winter Vehicle Award For Best Electric Vehicle. My fir… [+4002 chars]"
+      },
+      {
+        "name": "Los Angeles Times",
+        "author": "Gregory Yee",
+        "title": "Driver killed in high-speed Tesla crash outside Palos Verdes Peninsula home",
+        "description": "The crash occurred shortly before noon at 27060 Sunnyridge Road, according to the California Highway Patrol.",
+        "url": "https://www.latimes.com/california/story/2022-08-30/driver-killed-tesla-crash-utility-pole-palos-verdes-peninsula-home",
+        "urlToImage": "https://ca-times.brightspotcdn.com/dims4/default/081c27e/2147483647/strip/true/crop/3018x1584+0+214/resize/1200x630!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F0a%2Fd9%2Ff5e0360a4a50a50da5231307c323%2Fteslapvcrash.jpg",
+        "publishedAt": "2022-08-31T03:01:36Z",
+        "content": "A driver was killed Tuesday when her Tesla crashed into a utility pole and through a homes front yard after speeding down a residential street on the Palos Verdes Peninsula. \r\nThe crash occurred shor… [+1088 chars]"
+      },
+      {
+        "name": "Yahoo Entertainment",
+        "author": "Charlotte Yang, Danny Lee and Jeanny Yu",
+        "title": "BYD Plunges as Buffett’s Stake Sale Spurs Bets on More Selling",
+        "description": "(Bloomberg) -- Traders rushed to sell BYD Co. after Warren Buffett’s Berkshire Hathaway Inc. trimmed its stake in the Chinese electric vehicle maker, fearing...",
+        "url": "https://finance.yahoo.com/news/byd-plunges-buffett-stake-sale-020018534.html",
+        "urlToImage": "https://s.yimg.com/uu/api/res/1.2/dDaLNh79beCSxh2bGjcAjQ--~B/aD02NzU7dz0xMjAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/bloomberg_markets_842/dee0c9624a07e705c5433f54bdbac06d",
+        "publishedAt": "2022-08-31T02:41:22Z",
+        "content": "(Bloomberg) -- Traders rushed to sell BYD Co. after Warren Buffetts Berkshire Hathaway Inc. trimmed its stake in the Chinese electric vehicle maker, fearing that the legendary investor may be gearing… [+2273 chars]"
+      },
+      {
+        "name": "Tech Times",
+        "author": "Isaiah Richard",
+        "title": "Tesla FSD Beta 10.69.2 Coming to 100k EVs Next Week, Reveals Elon Musk",
+        "description": "The Tesla FSD Beta 10.69.2 is coming as promised.",
+        "url": "https://www.techtimes.com/articles/279892/20220830/tesla-fsd-beta-10-69-2-coming-100k-evs-next.htm",
+        "urlToImage": "https://1734811051.rsc.cdn77.org/data/images/full/407925/elon-musk-upgrades-tesla-spacex-childcare-benefits-employees-families-to-receive-direct-donations.jpg",
+        "publishedAt": "2022-08-31T02:30:00Z",
+        "content": "Tesla FSD Beta 10.69 is the latest version of the autonomous driving system from the company, and last week, Elon Musk promised that two new versions of the system are coming for a wider release for … [+2953 chars]"
+      },
+      {
+        "id": "australian-financial-review",
+        "name": "Australian Financial Review",
+        "author": "Campbell Kwan",
+        "title": "Everything you need to know about the jobs summit explained - The Australian Financial Review",
+        "description": "As participants make their way to Parliament House in Canberra, here’s what you need to know. Lifting wages, bargaining agreements and easing skills shortages are top of the agenda.",
+        "url": "https://www.afr.com/politics/federal/everything-you-need-to-know-about-the-jobs-summit-explained-20220829-p5bdkn",
+        "urlToImage": "https://static.ffx.io/images/$zoom_0.5298%2C$multiply_2%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/c_scale%2Cw_800%2Cq_88%2Cf_jpg/t_afr_no_label_no_age_social_wm/1112a77e57c649f42245b9a17f38a9c2e4155009",
+        "publishedAt": "2022-08-31T02:28:00Z",
+        "content": "Whos going, whos not?\r\nThe list of 142 people invitees comprises business and industry groups (36 per cent); unions (23 per cent); community groups (20 per cent); and government and academics (10 per… [+7823 chars]"
+      },
+      {
+        "id": "fox-news",
+        "name": "Fox News",
+        "author": "Tucker Carlson",
+        "title": "TUCKER CARLSON: California's leaders know nothing about energy",
+        "description": "Fox News host Tucker Carlson voices his concerns over some green energy policies phasing out gas powered vehicles while Americans see rolling blackouts on \"Tucker Carlson Tonight.\"",
+        "url": "https://www.foxnews.com/opinion/tucker-carlson-californias-leaders-know-nothing-energy",
+        "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2022/08/Video-82.jpg",
+        "publishedAt": "2022-08-31T02:18:30Z",
+        "content": "On April 24 of last year, and you may have missed this, the state of California finally achieved what the Green Movement has dreamt about for decades. It happened. The State Energy Authority in Calif… [+17925 chars]"
       },
