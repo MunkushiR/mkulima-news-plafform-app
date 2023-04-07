@@ -111,6 +111,38 @@ function getLocal() {
         })
 
 }
+// display regional news
+function getRegional() {
+    fetch(regionalUrl)
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data);
+
+            let region = ''
+            data.slice(0, 3).forEach(regional => {
+                
+                region += `
+                    <div class="md:flex justify-bewtween">
+                        <div class="bg-green-300 hover:bg-green-400 rounded-md shadow-lg hover:shadow-xl hover:scale-105 hover:translate-x-2 hover:transform duration-500">
+                            <div class="">
+                                <img class="rounded-t-lg" id="img-url" src="${regional.urlToImage}" alt="">
+                            </div>
+                            <div class="pt-2 pb-4 px-6 my-4">
+                                <h3 class="text-xl font-semibold text-gray-800">${regional.title}</h3>
+                                <p>${regional.description}</p>
+                                <h3 class="py-2 font-semibold text-green-800" href="${regional.source_url}">By ${regional.author}</h3>
+                            </div>
+                        </div>
+                    </div>
+                `
+            });
+            document.getElementById("regional-news").innerHTML = region;
+
+        })
+
+}
+
+
 
 
     
