@@ -18,6 +18,10 @@ function toggleMenu() {
     navbar.classList.toggle("hidden")
     times.style.display = "none"
     hambuger.style.display = "flex"
+    
+}
+
+
 
 // api endpoints
 const latestlUrl = "https://nameless-reef-64152.herokuapp.com/latests"
@@ -27,7 +31,6 @@ const intUrl = "https://nameless-reef-64152.herokuapp.com/internationals"
 const postsUrl = "https://nameless-reef-64152.herokuapp.com/posts"
 
 // varriables
-
 
 
 
@@ -50,36 +53,37 @@ function getLatest() {
                     </div>
                 </div>
                 <div class="md:flex flex-col space-y-8 hidden">
-                <div class="relative shadow-lg hover:shadow-xl hover:scale-105 hover:translate-2 hover:transform duration-500">
-                    <div class="w-1/2 float-right">
-                        <img class="rounded-lg" src="${latest.urlToImage}" alt="">
+                    <div class="relative shadow-lg hover:shadow-xl hover:scale-105 hover:translate-2 hover:transform duration-500">
+                        <div class="w-1/2 float-right">
+                            <img class="rounded-lg" src="${latest.urlToImage}" alt="">
+                        </div>
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+                            <a class="md:text-2xl text-lg text-white font-bold tracking-wide cursor-pointer hover:text-gray-100 href="${latest.url}">${latest.title}</a>
+                            <p class="md:text-xl text-lg font-medium mb-2">${latest.description}</p>
+                            <h3 class="text-lg py-2 font-semibold text-green-200">${latest.author}, <span class="font-medium">${latest.name}</span></h3>
+                        </div>
                     </div>
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-                        <a class="md:text-2xl text-lg text-white font-bold tracking-wide cursor-pointer hover:text-gray-100 href="${latest.url}">${latest.title}</a>
-                        <p class="md:text-xl text-lg font-medium mb-2">${latest.description}</p>
-                        <h3 class="text-lg py-2 font-semibold text-green-200">${latest.author}, <span class="font-medium">${latest.name}</span></h3>
-                    </div>
-                </div>
-                <div class="relative shadow-lg hover:shadow-xl hover:scale-105 hover:translate-2 hover:transform duration-500">
-                    <div class="w-1/2 float-right">
-                        <img class="rounded-lg" src="${latest.urlToImage}" alt="">
-                    </div>
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-                        <a class="md:text-2xl text-lg text-white font-bold tracking-wide cursor-pointer hover:text-gray-100 href="${latest.url}">${latest.title}</a>
-                        <p class="md:text-xl text-lg font-medium mb-2">${latest.description}</p>
-                        <h3 class="text-lg py-2 font-semibold text-green-200">${latest.author}, <span class="font-medium">${latest.name}</span></h3>
+                    <div class="relative shadow-lg hover:shadow-xl hover:scale-105 hover:translate-2 hover:transform duration-500">
+                        <div class="w-1/2 float-right">
+                            <img class="rounded-lg" src="${latest.urlToImage}" alt="">
+                        </div>
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+                            <a class="md:text-2xl text-lg text-white font-bold tracking-wide cursor-pointer hover:text-gray-100 href="${latest.url}">${latest.title}</a>
+                            <p class="md:text-xl text-lg font-medium mb-2">${latest.description}</p>
+                            <h3 class="text-lg py-2 font-semibold text-green-200">${latest.author}, <span class="font-medium">${latest.name}</span></h3>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        `
-    });
+            `
+        });
 
-    document.getElementById("output").innerHTML = output;
-    
+        document.getElementById("output").innerHTML = output;
+        
 
- })
-} 
+     })
+}
+
 // display local news
 function getLocal() {
     fetch(localUrl)
@@ -111,6 +115,8 @@ function getLocal() {
         })
 
 }
+
+
 // display regional news
 function getRegional() {
     fetch(regionalUrl)
@@ -142,6 +148,7 @@ function getRegional() {
 
 }
 
+
 // display international
 function getInternational() {
     fetch(intUrl)
@@ -171,7 +178,11 @@ function getInternational() {
 
         })
 
-}// post news
+}
+
+
+
+// post news
 const form = document.getElementById("form")
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -238,11 +249,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 })
-
-
-
-
-
-
-    
-}
