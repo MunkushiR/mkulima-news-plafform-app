@@ -1,6 +1,7 @@
 /* Global styles */
 
 body {
+    background-color: aqua;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -15,8 +16,8 @@ body {
   /* Header styles */
   
   header {
-    background-color: #003366;
-    color: #fff;
+    background-color: #ecf00f;
+    color: #f50707;
     padding: 10px;
   }
   

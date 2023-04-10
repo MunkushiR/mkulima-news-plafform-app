@@ -17,9 +17,9 @@ app.get('/', (req, res) => {
 app.get('/news', (req, res) => {
   // Load news articles from database or external API
   const newsArticles = [
-    { title: 'New weather patterns expected in the coming months', date: 'April 1, 2023', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.' },
-    { title: 'Farmers receive new subsidies from government', date: 'March 27, 2023', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.' },
-    { title: 'New agricultural technology reduces water usage', date: 'March 22, 2023', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.' },
+    { title: 'New weather patterns expected in the coming months', date: 'April 1, 2023', content: 'lots of heavy rain.' },
+    { title: 'Farmers receive new subsidies from government', date: 'May 27, 2023', content: 'wind and cold.' },
+    { title: 'New agricultural technology reduces water usage', date: 'june 22, 2023', content: 'very dry and hot.' },
   ];
   res.render('news', { newsArticles });
 });
