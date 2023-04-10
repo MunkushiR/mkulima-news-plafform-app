@@ -1,5 +1,5 @@
-const apiKey = 'YOUR_API_KEY';
-const city = 'CITY_NAME';
+const apiKey = 'https://api.openweathermap.org/data/2.5/weather?q';
+const city = 'nairobi';
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
 fetch(apiUrl)
