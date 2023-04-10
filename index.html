@@ -1,144 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
+    <title>Agricultural News Platform</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Famers news </title>
+    <!-- Link to your CSS file -->
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <nav class="bg-green-500 md:py-8 py-6">
-        <div class="md:flex md:justify-around items-center md:px-0 px-4">
-            <div class="flex justify-between">
-                <h1 class="text-white md:text-2xl text-xl font-bold">famers news</h1>
-                
-                <i onclick="changeDisplay()" id="hambuger" class="fa fa-bars md:hidden text-xl text-white cursor-pointer"></i>
-                <i onclick="toggleMenu()" id="times" class="fa fa-times hidden text-2xl text-white cursor-pointer"></i>
-            </div>
-            <div class="text-gray-800 md:flex">
-                <ul class="md:flex justify-around items-center font-semibold md:text-xl text-base hidden" id="menu">
-                    <li><a class="md:mx-3 py-2 hover:text-white duration-300" href="#">Home</a></li>
-                    <li><a class="md:mx-3 py-2 hover:text-white duration-300" href="#latest">Latest News</a></li>
-                    <li><a class="md:mx-3 py-2 hover:text-white duration-300" href="#local">Local News</a></li>
-                    <li><a class="md:mx-3 py-2 hover:text-white duration-300" href="#international">International News</a></li>
-                    <li><a class="md:mx-3 py-2 hover:text-white duration-300" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!--latest-news-->
-    <section class="lg:px-16 md:px-8 px-4 py-8" id="latest">
-        <div class="flex justify-betweeen space-x-8 items-center">
-            <i class="md:text-3xl text-lg fa fa-chevron-left" aria-hidden="true"></i>
-            <div id="output" class="md:flex justify-bewtween md:space-x-8">    
-            </div>
-            <i class="md:text-3xl text-lg fa fa-chevron-right" aria-hidden="true"></i>
-        </div>
-    </section> 
-    <!--local-news-->
-    <section class="lg:px-16 md:px-8 px-4 py-8" id="local">
+  </head>
+  <body>
+    <header>
+      <h1>Agricultural News Platform</h1>
+      <!-- Navigation menu -->
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Weather</a></li>
+          <li><a href="#">Finance</a></li>
+          <li><a href="#">Market News</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Weather information section -->
+      <section class="lg:px-16 md:px-8 px-4 py-8" id="weather">
         <div class="flex justify-between items-center py-8">
-            <h2 class="md:text-2xl text-xl font-semibold text-green-700">Local News</h2>
+            <h2 class="md:text-2xl text-xl font-semibold text-green-700">Latest wether reports</h2>
             <button id="title-btn" class="">See All</button>
         </div>
 
-        <div id="local-news" class="md:flex justify-bewtween md:space-x-8"> 
+        <div id="weather info" class="md:flex justify-bewtween md:space-x-8"> 
         </div>
     </section>
-<!--regional-news-->
-<section class="lg:px-16 md:px-8 px-4 py-8" id="regional">
-    <div class="flex justify-between items-center py-8">
-        <h2 class="md:text-2xl text-xl font-semibold text-green-700">Regional News</h2>
-        <button id="title-btn" class="">See All</button>
-    </div>
-    <div id="regional-news" class="md:flex justify-bewtween md:space-x-8">   
-    </div>
-</section>
-  <!--regional-news-->
-  <section class="lg:px-16 md:px-8 px-4 py-8" id="regional">
-    <div class="flex justify-between items-center py-8">
-        <h2 class="md:text-2xl text-xl font-semibold text-green-700">Regional News</h2>
-        <button id="title-btn" class="">See All</button>
-    </div>
-    <div id="regional-news" class="md:flex justify-bewtween md:space-x-8">   
-    </div>
-</section>
-<!--international-news-->
-<section class="lg:px-16 md:px-8 px-4 py-8" id="international">
-    <div class="flex justify-between items-center">
-        <h2 class="md:text-2xl text-xl font-semibold text-green-700">International News</h2>
-        <button id="title-btn" class="">See All</button>
-    </div>
-    <div id="international-news" class="md:flex justify-bewtween md:space-x-8">           
-    </div>
-</section>
-<!--public-posts-->
-<section class="lg:px-16 md:px-8 px-4 py-8">
-    <div class="flex justify-between items-center">
-        <h2 class="md:text-2xl text-xl font-semibold text-green-700">Public Opinions</h2>
-        <button id="title-btn" class="">See All</button>
-    </div>
-    <div id="public-opinon" class="md:flex justify-bewtween md:space-x-8">         
-    </div>
-</section>
-  <!--post news-->
-  <section class="lg:px-16 md:px-8 px-4 py-8">
-    <h2 class="md:text-2xl text-xl font-semibold text-green-700">Post Opinion</h2>
-    <div>
-        <form id="form" action="#" method="post">
-            <div class="py-4">
-                <label class="" for="title">Title</label><br>
-                <input class="xl:w-1/2 lg:w-2/3 w-full px-2 py-2 outline-none ring-2 rounded-md" type="text" id="post-title" placeholder="Type title here...">
-            </div>
-            <div class="py-4">
-                <label class="" for="author">Author</label><br>
-                <input class="xl:w-1/2 lg:w-2/3 w-full px-2 py-2 outline-none ring-2 rounded-md" type="text" id="author" placeholder="Type your name here...">
-            </div>
-            <div class="py-4">
-                <label class="" for="image">Image</label><br>
-                <input class="xl:w-1/2 lg:w-2/3 w-full px-2 py-2 outline-none ring-2 rounded-md" type="file" id="image" placeholder="Type your name here...">
-            </div>
-            <div>
-                <label class="" for="content">Content</label><br>
-                <textarea class="xl:w-1/2 lg:w-2/3 w-full px-2 py-2 outline-none ring-2 rounded-md" id="post-content" cols="30" rows="3" placeholder="Type content here..."></textarea>
-            </div>
-            <input class="py-2 px-8 my-2 rounded-md text-white font-semibold hover:text-gray-700 bg-green-500 hover:bg-green-600 shadow-md hover-shadow-xl shadow-cyan-600" type="submit" value="Post" >
-        </form>
-    </div>
-</section>
- <!--contact-->
- <section class="lg:px-16 md:px-8 px-4 py-8" id="contact">
-    <h2 class="md:text-2xl text-xl font-semibold text-green-700">Contact</h2>
-    <div>
-    </div>
-</section>
-<!--newsletter-sign-up-->
-<section>
-    <div class="bg-gradient-to-r from-green-300 via-green-400 to-cyan-400 md:py-12 py-4 px-4">
-        <div class="md:flex justify-around items-center md:px-0 px-4">
-            <div>
-                <h1 class="md:text-3xl text-lg text-center py-2 font-bold text-gray-800">Sign up for newsletter to get latest news</h1>
-            </div>
-            <div class="flex justify-center md:px-0 px-4">
-                <input class="py-2 px-4 my-2 rounded-md outline-none ring-2 " type="email" id="email" placeholder="Enter your email address">
-                <input class="py-2 px-4 my-2 ml-4 rounded-md text-white font-semibold hover:text-gray-700 bg-green-500 hover:bg-green-600 cursor-pointer shadow-md hover-shadow-xl shadow-cyan-600" id="signup" type="submit" value="Sign Up">
+      <!-- Finance information section -->
+      <section class="lg:px-16 md:px-8 px-4 py-8" id="finance">
+        <div class="flex justify-between items-center py-8">
+            <h2 class="md:text-2xl text-xl font-semibold text-green-700">Finance News</h2>
+            <p>Insert your finance-related news here.</p>
+            <button id="title-btn" class="">See All</button>
+        </div>
+
+        <div id="weather info" class="md:flex justify-bewtween md:space-x-8"> 
+        </div>
+    </section>
+      <!-- Market news section -->
+      <section class="lg:px-16 md:px-8 px-4 py-8" id="Market">
+        <div class="flex justify-between items-center py-8">
+            <h2 class="md:text-2xl text-xl font-semibold text-green-700">market news</h2>
+            <p>Insert your market-related news here.</p>
+            <button id="title-btn" class="">See All</button>
+        </div>
+
+        <div id="local-news" class="md:flex justify-bewtween md:space-x-8">
+            
+            
+        </div>
+    </section>
+      <!--newsletter-sign-up-->
+      <section>
+        <div class="bg-gradient-to-r from-green-300 via-green-400 to-cyan-400 md:py-12 py-4 px-4">
+            <div class="md:flex justify-around items-center md:px-0 px-4">
+                <div>
+                    <h1 class="md:text-3xl text-lg text-center py-2 font-bold text-gray-800">Sign up for newsletter to get latest news</h1>
+                </div>
+                <div class="flex justify-center md:px-0 px-4">
+                    <input class="py-2 px-4 my-2 rounded-md outline-none ring-2 " type="email" id="email" placeholder="Enter your email address">
+                    <input class="py-2 px-4 my-2 ml-4 rounded-md text-white font-semibold hover:text-gray-700 bg-green-500 hover:bg-green-600 cursor-pointer shadow-md hover-shadow-xl shadow-cyan-600" id="signup" type="submit" value="Sign Up">
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<!--footer-->
-<footer class="bg-gray-800 ">
-    <div class="md:px-8 px-4 md:py-6 py-4 text-center">
-        <div class="md:flex justify-around items-center text-green-400">
-            <div class="md:my-0 my-2">
-                <h1>famers news</h1>
-            </div>
-        </div>
-    </div>
-</footer>
-<script src="app.js"></script>
-</body>
+    </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Agricultural News Platform</p>
+    </footer>
+    <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
+  </body>
 </html>
