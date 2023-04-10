@@ -11,6 +11,9 @@ fetch(apiUrl)
     const weatherElement = document.getElementById('weather-info');
     weatherElement.innerHTML = `Temperature in ${location}: ${temperature}°C, ${weatherDescription}`;
   })
+
+
+  
   .catch(error => console.error(error));
   function showAlert(message, type) {
     const alertElement = document.createElement('div');
@@ -35,4 +38,5 @@ fetch(apiUrl)
     const quoteElement = document.getElementById('quote');
     quoteElement.textContent = quotes[randomIndex];
   }
+  
   
