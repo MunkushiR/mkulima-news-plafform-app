@@ -1,42 +1,38 @@
-const apiKey = 'https://api.openweathermap.org/data/2.5/weather?q';
-const city = 'nairobi';
-const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+// Weather section
+const weatherForm = document.querySelector('#weather form');
+weatherForm.addEventListener('submit', function(event) {
+  event.preventDefault();
+  const weatherFile = document.querySelector('#weather input[type="file"]').files[0];
+// OpenWeatherMap API call
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${file.name}&appid=ca70b4bb2b225c9ca1d53bcd6803476b
+`)
+.then(response => response.json())
+.then(data => {
+  const weatherInfo = document.getElementById('weather-info');
+  const weatherData = `
+    <div>
+      <h3>${data.name}, ${data.sys.country}</h3>
+      <p>Current Temperature: ${data.main.temp} °F</p>
+      <p>Feels Like: ${data.main.feels_like} °F</p>
+    </div>
+  `;
+  weatherInfo.innerHTML = weatherData;
+})
+.catch(error => console.log(error));
 
-fetch(apiUrl)
-  .then(response => response.json())
-  .then(data => {
-    const temperature = Math.round(data.main.temp - 273.15);
-    const weatherDescription = data.weather[0].description;
-    const location = data.name;
-    const weatherElement = document.getElementById('weather-info');
-    weatherElement.innerHTML = `Temperature in ${location}: ${temperature}°C, ${weatherDescription}`;
-  })
+});
 
+// Finance section
+const financeForm = document.querySelector('#finance form');
+financeForm.addEventListener('submit', function(event) {
+  event.preventDefault();
+  const financeFile = document.querySelector('#finance input[type="file"]').files[0];
+});
 
-  
-  .catch(error => console.error(error));
-  function showAlert(message, type) {
-    const alertElement = document.createElement('div');
-    alertElement.className = `alert ${type}`;
-    alertElement.textContent = message;
-    const container = document.querySelector('.container');
-    const form = document.querySelector('form');
-    container.insertBefore(alertElement, form);
-  
-    setTimeout(() => alertElement.remove(), 3000);
-  }
-  const quotes = [
-    'The farmer is the only man in our economy who buys everything at retail, sells everything at wholesale, and pays the freight both ways.',
-    'Agriculture is our wisest pursuit, because it will in the end contribute most to real wealth, good morals, and happiness.',
-    'Farming looks mighty easy when your plow is a pencil and you\'re a thousand miles from the corn field.',
-    'The ultimate goal of farming is not the growing of crops, but the cultivation and perfection of human beings.',
-    'The farmer has to be an optimist or he wouldn\'t still be a farmer.'
-  ];
-  
-  function generateQuote() {
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    const quoteElement = document.getElementById('quote');
-    quoteElement.textContent = quotes[randomIndex];
-  }
-  
-  
+// Market section
+const marketForm = document.querySelector('#Market form');
+marketForm.addEventListener('submit', function(event) {
+  event.preventDefault();
+  const marketFile = document.querySelector('#Market input[type="file"]').files[0];
+
+});
